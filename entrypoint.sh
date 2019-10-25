@@ -60,6 +60,7 @@ git init || exit 1
 git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com" || exit 1
 git config --local user.name  "${GITHUB_ACTOR}" || exit 1
 git remote add origin "${REMOTE}" || exit 1
+git remote -v
 
 # Fetch initial (current contents).
 #
